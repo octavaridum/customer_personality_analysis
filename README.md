@@ -1,4 +1,4 @@
-<h1 align="center">customer_personality_analysis</h1> 
+<h1 align="center">Customer Personality Analysis</h1> 
 
 ![Intro Img](Image/cus_per_ana.png)
 
