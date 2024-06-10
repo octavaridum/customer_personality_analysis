@@ -21,4 +21,122 @@ I have obtained the data set and now it is time to perform an Exploratory data A
 **1.1 Dataset**
 The dataset is the historical sales data that contains sales from 2010-12-01 to 2011-12-09 which is a total of 699 days. It has 29 features and 2,240 observations. The following are a short information of our feature: 
 
-  
+**People:**
+
+`ID` : Customer's unique identifier
+
+`Year_Birth` : Customer's birth year
+
+`Education` : Customer's education level
+
+`Marital_Status` : Customer's marital status
+
+`Income` : Customer's yearly household income
+
+`Kidhome` : Number of children in customer's household
+
+`Teenhome` : Number of teenagers in customer's household
+
+`Dt_Customer` : Date of customer's enrollment with the company
+
+`Recency` : Number of days since customer's last purchase
+
+`Complain` : 1 if the customer complained in the last 2 years, 0 otherwise
+
+**Products:**
+
+`MntWines` : Amount spent on wine in last 2 years
+
+`MntFruits` : Amount spent on fruits in last 2 years
+
+`MntMeatProducts` : Amount spent on meat in last 2 years
+
+`MntFishProducts` : Amount spent on fish in last 2 years
+
+`MntSweetProducts` : Amount spent on sweets in last 2 years
+
+`MntGoldProds` : Amount spent on gold in last 2 years
+
+**Promotion:**
+
+`NumDealsPurchases` : Number of purchases made with a discount
+
+`AcceptedCmp1` : 1 if customer accepted the offer in the 1st campaign, 0 otherwise
+
+`AcceptedCmp2` : 1 if customer accepted the offer in the 2nd campaign, 0 otherwise
+
+`AcceptedCmp3` : 1 if customer accepted the offer in the 3rd campaign, 0 otherwise
+
+`AcceptedCmp4` : 1 if customer accepted the offer in the 4th campaign, 0 otherwise
+
+`AcceptedCmp5` : 1 if customer accepted the offer in the 5th campaign, 0 otherwise
+
+`Response` : 1 if customer accepted the offer in the last campaign, 0 otherwise
+
+**Place of Purchase :**
+
+`NumWebPurchases` : Number of purchases made through the company’s website
+
+`NumCatalogPurchases` : Number of purchases made using a catalog
+
+`NumStorePurchases` : Number of purchases made directly in stores
+
+`NumWebVisitsMonth` : Number of visits to company’s website in the last month
+
+**1.2 Data Preprocessing And Feature Engineering**
+
+**1.2.1 Data Preprocessing**
+
+The data preprocessing includes the following steps:
+
+- Cleaning and handling missing values.
+- Capping Outlier using IQR technique
+- Dropping unnecessary features
+
+**1.2.2 Feature Engineering:**
+
+During the feature engineering process I use the original features to create some new relevant features that capture customer behavior and engagement. These features were obtained by using existing customer data and accurately reflect the values that these features should contain for the given customer. These features add a whole new and better dimensionality by which a customer cluster can be identified. A total of 7 features were derived and the following are these features: 
+
+`Age` : The Age of the customer derived from Year_Birth
+
+`Total_Spent` : The total spent by the customer which is a sum of all features in the “products” category.
+
+`Children` : The total number of children the customer has.
+
+`living_with` : The value is 0 if the customer lives alone and is 1 if the customer lives with others
+
+`family_size` : The size of the customer's family.
+
+`Is_Parent` : The value is 0 if the customer is not a parent and is 1 if the customer is a parent 
+
+`Married` : The value is 0 if the customer is not married and is 1 if the customer is a married 
+
+Data distribution and Descriptive statistic Visualization
+The following diagrams show the distribution of the four major features "Age", "Income", "Total_Spent", and "Education" through pair plots and histograms. These visualizations are crucial for understanding our customer base. 
+
+2.1 Histogram
+	The diagram below shows the distribution of our three features with education as the hue.
+
+![histplt Img](Image/hisplt.png)
+
+<p align="center"><strong>Figure 1. Feature Distribution for Income,Spent,Age</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
