@@ -111,18 +111,58 @@ During the feature engineering process I use the original features to create som
 
 `Married` : The value is 0 if the customer is not married and is 1 if the customer is a married 
 
-Data distribution and Descriptive statistic Visualization
+## 2. Data distribution and Descriptive statistic Visualization
+
 The following diagrams show the distribution of the four major features "Age", "Income", "Total_Spent", and "Education" through pair plots and histograms. These visualizations are crucial for understanding our customer base. 
 
-2.1 Histogram
-	The diagram below shows the distribution of our three features with education as the hue.
+**2.1 Histogram**
+
+The diagram below shows the distribution of our three features with education as the hue.
 
 ![histplt Img](Image/hisplt.png)
 
 <p align="center"><strong>Figure 1. Feature Distribution for Income,Spent,Age</strong></p>
 
+**2.2 Pair plot**
+
+The diagram below shows the pair plot of our three features with education as the hue. There are KDE plots and scatter plots for each feature against the other. This helps us observe the relationship between these features.
+
+![pair_plot Img](Image/pplot.png)
+  
+<p align="center"><strong>Figure 2. Pair Plot</strong></p>
 
 
+## 3 Machine Learning Approach
+
+I will be implementing and comparing  K-means, DBSCAN, and K medoid clustering to cluster our dataset. I have determined the optimal number of clusters using methods like the Elbow method, Silhouette score
+
+![pair_plot Img](Image/elb.png)
+
+**Figure 3. The Elbow Method**
+
+## 4. Evaluation
+
+The following are the Silhouette score, Davies-Bouldin Index, and Calinski-Harabasz Index for our models:
+
+**4.1 Metrics Overview:**
+
+`K means Clustering`:
+
+<p align="center"><strong>Silhouette score: 0.5442126866165884</strong></p>
+<p align="center"><strong>Davies-Bouldin Index: 0.5482239239539933</strong></p>
+<p align="center"><strong>Calinski-Harabasz Index: 6099.403519951906</strong></p>
+
+`DBSCAN`:
+
+<p align="center"><strong>Silhouette score: -0.7580272402830124</strong></p>
+<p align="center"><strong>Davies-Bouldin Index: 1.0304901525291839</strong></p>
+<p align="center"><strong>Calinski-Harabasz Index: 4.249458998733949</strong></p>
+
+`K-Medoids` : 
+
+<p align="center"><strong>Silhouette score: 0.5399221408024186</strong></p>
+<p align="center"><strong>Davies-Bouldin Index: 0.547363762370909</strong></p>
+<p align="center"><strong>Calinski-Harabasz Index:6025.901674737833</strong></p>
 
 
 
