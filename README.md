@@ -164,10 +164,95 @@ The following are the Silhouette score, Davies-Bouldin Index, and Calinski-Harab
 <p align="center"><strong>Davies-Bouldin Index: 0.547363762370909</strong></p>
 <p align="center"><strong>Calinski-Harabasz Index:6025.901674737833</strong></p>
 
+**4.2 Conclusion:**
 
+Given the metrics, K-Means Clustering is the best model among the three. It has the highest Silhouette Score and Calinski-Harabasz Index, and although its Davies-Bouldin Index is marginally higher than K-Medoids, the differences are minimal and compensated by the other two metrics indicating superior performance.
 
+## 5. Cluster Quality and Interpretation through Visualization
 
+I will now access cluster quality and interpretability of the cluster through various visualizations with regards to the machine learning cluster. I have used the clustering results from K-means clustering as this model provided the best performance.
 
+**5.1 Cluster Visualization**
+
+The following are the visualization of our data set to determine the nature of each of our clusters. 
+
+Figure 4. Cluster Countplot
+
+Figure 4. Distribution of Cluster by feature
+
+Figure 5. Countplot of Promotion Accepted by cluster
+
+Figure 6. Boxenplot of features by cluster
+
+Figure 7. Boxplot of features by cluster
+
+Figure 8. Scatter Plot by cluster
+
+Figure 7. Countplot for feature by cluster
+
+**5.2 Cluster Observation**
+
+The following observations can be made about each of the cluster:
+
+**Cluster 0**
+
+- There are 730 unique customers in this cluster
+- This cluster is in the middle range when in come to customer income and amount spent
+- On average the number of deals purchase is higher in this cluster
+  
+ `Age`: The average age in this cluster is about 57 years old 
+ 
+ `Income`: The average yearly household income of customers in this cluster is about $50,000
+ 
+ `Spent`: Total spending for the last two years of customers in this cluster is on average $490 
+ 
+ `Complain`: This cluster has the lowest number of complain i.e. 3
+ 
+ `Response`: This cluster has the lowest response to campaigns compared to other clusters
+ 
+ `Is_Parent`: This cluster has a really small group of non parent customers i.e. 73. 
+ 
+ `Promotion Accepted`: This cluster has a fair amount of accepted promotions with 127 promotion accepted
+
+**Cluster 1**
+
+- There are 751 unique customers in this cluster 
+- This cluster is the top tier customers with high income and amount spent
+- On average the number of deals purchase in this cluster is lowest 
+ 
+ `Age`: The average age in this cluster is about 55 years old 
+ 
+ `Income`: The average yearly household income of customers in this cluster is about $750,000
+ 
+ `Spent`: Total spending for the last two years of customers in this cluster is on average $1250 
+ 
+ `Complain`: This cluster also has fairly few number of complain i.e. 5
+ 
+ `Response`: This cluster responds very well to campaign as 174 converted to buying at the last campaign
+ 
+ `Is_Parent`: This cluster has the largest group of non parent customers i.e. 445. 
+ 
+ `Promotion Accepted`: This cluster has the highest amount of accepted promotions with 463 promotion accepted
+ 
+**Cluster 2**
+
+- There are 762 unique customers in this cluster
+- This cluster is in the lowest range when in come to customer with the lowest income and amount spent
+- On average the number of deals purchased is higher in this cluster so incentivising this cluster with more deals can be a good strategy. 
+ 
+ `Age`: The average age in this cluster is lowest i.e. 50 years old 
+ 
+ `Income`: The average yearly household income of customers in this cluster is about $30,000
+ 
+ `Spent`: Total spending for the last two years of customers in this cluster on average is only slightly above $0
+ 
+ `Complain`: This cluster has the largest number of complain i.e. 13
+ 
+ `Response`: This cluster has a fair response to campaigns compared to other clusters
+ 
+ `Is_Parent`: This cluster has the largest group of parent customers i.e. 647. 
+ 
+ `Promotion Accepted`: This cluster has the highest amount of rejected promotions with 692 promotion rejected
 
 
 
