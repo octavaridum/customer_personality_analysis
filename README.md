@@ -176,25 +176,39 @@ I will now access cluster quality and interpretability of the cluster through va
 
 The following are the visualization of our data set to determine the nature of each of our clusters. 
 
+![pair_plot Img](Image/dis_clu.png)
+
 Figure 4. Cluster Countplot
 
-Figure 4. Distribution of Cluster by feature
+![pair_plot Img](Image/his_clust.png)
 
-Figure 5. Countplot of Promotion Accepted by cluster
+Figure 5. Distribution of Cluster by feature
 
-Figure 6. Boxenplot of features by cluster
+![pair_plot Img](Image/clu_prom.png)
 
-Figure 7. Boxplot of features by cluster
+Figure 6. Countplot of Promotion Accepted by cluster
 
-Figure 8. Scatter Plot by cluster
+![pair_plot Img](Image/ben.png)
 
-Figure 7. Countplot for feature by cluster
+Figure 7. Boxenplot of features by cluster
+
+![pair_plot Img](Image/bplt.png)
+
+Figure 8. Boxplot of features by cluster
+
+![pair_plot Img](Image/str.png)
+
+Figure 9. Scatter Plot by cluster
+
+![pair_plot Img](Image/clus_cnt.png)
+
+Figure 10. Countplot for feature by cluster
 
 **5.2 Cluster Observation**
 
 The following observations can be made about each of the cluster:
 
-**Cluster 0**
+**Cluster 0 (Mid-Range Customer)**
 
 - There are 730 unique customers in this cluster
 - This cluster is in the middle range when in come to customer income and amount spent
@@ -214,7 +228,7 @@ The following observations can be made about each of the cluster:
  
  `Promotion Accepted`: This cluster has a fair amount of accepted promotions with 127 promotion accepted
 
-**Cluster 1**
+**Cluster 1 (Loyal Customer)**
 
 - There are 751 unique customers in this cluster 
 - This cluster is the top tier customers with high income and amount spent
@@ -234,7 +248,7 @@ The following observations can be made about each of the cluster:
  
  `Promotion Accepted`: This cluster has the highest amount of accepted promotions with 463 promotion accepted
  
-**Cluster 2**
+**Cluster 2 (Infrequent Customer)** 
 
 - There are 762 unique customers in this cluster
 - This cluster is in the lowest range when in come to customer with the lowest income and amount spent
